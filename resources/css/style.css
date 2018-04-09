@@ -1,0 +1,137 @@
+#secButton1 {
+	background-color: #571845;
+	color: white;
+	font-family: 'Oswald', sans-serif;
+	height: 20vh;
+	text-align: center;
+	padding-top: 5vh;
+}
+
+#secButton2 {
+	background-color: #900C3E;
+	color: white;
+	font-family: 'Oswald', sans-serif;
+	height: 20vh;
+	text-align: center;
+	padding-top: 5vh;
+}
+
+#secButton3 {
+	background-color: #FF5733;
+	color: white;
+	font-family: 'Oswald', sans-serif;
+	height: 20vh;
+	text-align: center;
+	padding-top: 5vh;
+}
+
+#aboutBtn {
+	float: right;
+	background-color: #571845;
+	color: white;
+}
+
+#secTitle {
+	padding-top: 5vh;
+	text-align: center;
+	color: black;
+	font-size: xx-large;
+}
+
+#secSubtitle {
+	text-align: center;
+	color: grey;
+}
+
+#checklist {
+	padding-bottom: 5vh;
+}
+
+#outline {
+	background-color: #571845;
+	margin: 5vh;
+}
+
+#checklistColumns {
+	border-style: solid;
+	border-color: #571845;
+	margin: 5vh;
+}
+
+#checklistColumn1 {
+	padding: 5vh;
+}
+
+#checklistColumn2 {
+	padding: 5vh;
+}
+
+#checklistColumn3 {
+	padding: 5vh;
+}
+
+#checklistColumn4 {
+	padding: 5vh;
+}
+
+#columnImage {
+	height: 20vh;
+	width: 20vh;
+}
+
+#downloadBtn {
+	background-color: #FF5733;
+	color: white;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#schedule {
+	background-color: #FFC300;
+	padding-bottom: 5vh;
+}
+
+.roadmap {
+	height: 100vh;
+}
+
+#faq {
+	background-color: #571845;
+}
+
+#staff {
+}
+
+#staffCards {
+	padding: 5vh;
+}
+
+
+h1 {
+	font-family: 'Oswald', sans-serif;
+}
+
+p {
+	font-family: 'Lato', sans-serif;
+}
+
+.page-footer {
+	background-color: #850040;
+	padding: 2vh;
+}
+
+#footerImage {
+	height: 80%;
+	width: 40%;
+}
+
+#socialMedia {
+	color: white;
+	line-height: 90%;
+	float: right;
+}
+
+#fontAwesome {
+	margin-right: 10px;
+}

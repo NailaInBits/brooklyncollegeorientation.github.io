@@ -10,6 +10,12 @@
 	<!-- CSS -->
 	<link rel="stylesheet" href="resources/css/style.css">
 
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Arvo:400,700|Khand:700|Lato|Open+Sans|Oswald:700|Six+Caps|Teko:700" rel="stylesheet">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+
+
+
 	<title>BC Freshman Orientation</title>
 </head>
 <body>
@@ -21,9 +27,11 @@
 
 		<div class="collapse navbar-collapse" id="navbar">
 			 <a class="navbar-brand" href="http://www.brooklyn.cuny.edu/web/about/offices/caass.php">
-				<img src="resources/images/CAASSNavbarLogo.png" width="158" height="50" alt="">
+				<img class="img-fluid" src="resources/images/CAASSNavbarLogo.png" width="158" height="50" alt="">
 			</a>
+			
 			<ul class="navbar-nav mr-auto mx-auto mt-2 mt-lg-0">
+			<!-- Commenting this section out since the other orientation sites have not yet been built
 				<li class="nav-item active">
 					<a class="nav-link" href="#">Freshman Orientation<span class="sr-only">(current)</span></a>
 				</li>
@@ -33,9 +41,10 @@
 				<li class="nav-item">
 					<a class="nav-link" href="#">Parent Orientation</a>
 				</li>
-			</ul>
+			-->
+			</ul> 
 			<form class="form-inline my-2 my-lg-0">
-				<button class="btn" type="button" data-toggle="modal" data-target="#aboutModal">About</button>
+				<button class="btn" id="aboutBtn" type="button" data-toggle="modal" data-target="#aboutModal">About</button>
 			</form>
 		</div>
 	</nav>
@@ -93,7 +102,168 @@
 	</div>
 
 	<!-- Section Buttons -->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-4" id="secButton1">
+				<h1> PRE-ORIENTATION CHECKLIST </h1>
+			</div>
+			<div class="col-lg-4" id="secButton2">
+				<h1> ORIENTATION SESSION SCHEDULE </h1>
+			</div>
+			<div class="col-lg-4" id="secButton3">
+				<h1> FIRST DAY AT BROOKLYN COLLEGE </h1>
+			</div>
+		</div>
+	</div>
 
+	<div class="container-fluid" id="checklist">
+		<div class="row">
+			<div class="col-lg-12" id="secTitle">
+				<h1> PRE-ORIENTATION CHECKLIST </h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12" id="secSubtitle">
+				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec nibh vitae erat efficitur faucibus. </p>
+			</div>
+		</div>
+		<div class="row" id="checklistColumns">
+			<div class="col-lg-3" id="checklistColumn1">
+				<ol>
+					<li> <img src="resources/images/column1.png" class="img-fluid" id="columnImage"> </li>
+					<li> <p></p> </li>
+					<li> <button class="btn" type="button"> Download Checklist </button> </li>
+				</ol>
+			</div>
+			<div class="col-lg-3" id="checklistColumn2">
+				<ol>
+					<li> <img src="resources/images/column2.png" class="img-fluid" id="columnImage"> </li>
+					<li> <p></p> </li>
+					<li> <button class="btn" type="button"> Download Checklist </button> </li>
+				</ol>
+			</div>
+			<div class="col-lg-3" id="checklistColumn3">
+				<ol>
+					<li> <img src="resources/images/column3.png" class="img-fluid" id="columnImage"> </li>
+					<li> <p></p> </li>
+					<li> <button class="btn" type="button"> Download Checklist </button> </li>
+				</ol>
+			</div>
+			<div class="col-lg-3" id="checklistColumn4">
+				<ol>
+					<li> <img src="resources/images/column4.png" class="img-fluid" id="columnImage"> </li>
+					<li> <p></p> </li>
+					<li> <button class="btn" type="button"> Download Checklist </button> </li>
+				</ol>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12" id="checklistDownload">
+				<button class="btn" id="downloadBtn" type="button"> Download Checklist </button>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid" id="schedule">
+		<div class="row">
+			<div class="col-lg-12" id="secTitle">
+				<h1> ORIENTATION SESSION SCHEDULE </h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12" id="secSubtitle">
+				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec nibh vitae erat efficitur faucibus. </p>
+			</div>
+		</div>
+
+		<div class="row" id="outline">
+			<div class="col-lg-12" id="secSubtitle">
+				<img src="resources/images/schedule.png" class="img-fluid" id="scheduleImage">
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-12" id="secTitle">
+				<h1> FIRST DAY OF BROOKLYN COLLEGE ROADMAP </h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12" id="secSubtitle">
+				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec nibh vitae erat efficitur faucibus. </p>
+			</div>
+		</div>
+	</div>
+
+	<!-- FAQ -->
+	<div class="container-fluid" id="faq">
+		<div class="row">
+			<div class="col-lg-12" id="secTitle">
+				<h1> FAQ </h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12" id="secSubtitle">
+				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec nibh vitae erat efficitur faucibus. </p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Staff -->
+	<div class="container-fluid" id="staff">
+		<div class="row">
+			<div class="col-lg-12" id="secTitle">
+				<h1> WHO YOU'LL BE MEETING </h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12" id="secSubtitle">
+				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec nibh vitae erat efficitur faucibus. </p>
+			</div>
+		</div>
+		<div class="row" id="staffCards">
+			<div class="card" style="width: 18rem;">
+				<img class="card-img-top" src="resources/images/CAASSTN.jpg" alt="Card image cap">
+				<div class="card-body">
+					<p class="card-text"> Lorem ipsum dolor sit amet </p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<footer class="page-footer">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-6">
+					<a href="http://www.brooklyn.cuny.edu/web/home.php"> <img src="resources/images/BrooklynCollegeLogo.png" class="img-fluid" id="footerImage"> </a>
+				</div>
+				<div class="col-lg-2">
+				</div>
+				<div class="col-lg-4" id="socialMedia">
+					<p>
+						<a href="mailto:caass@brooklyn.cuny.edu">Contact Us</a>
+					</p>
+					<p>
+						<a href="http://www.brooklyn.cuny.edu/web/about/offices/caass.php#">CAASS</a>
+					</p>
+					<p>
+						<a href="http://www.brooklyn.cuny.edu/web/academics/special-programs/first.php">First College Year</a>
+					</p>
+
+					<div>
+						<!--Facebook-->
+						<a href="http://www.brooklyn.cuny.edu/web/facebook.php"> <i class="fab fa-facebook-square" id="fontAwesome"></i> </a>
+						<!--Twitter-->
+						<a href="http://www.brooklyn.cuny.edu/web/twitter.php"> <i class="fab fa-twitter-square" id="fontAwesome"></i> </a>
+						<!--Instagram-->
+						<a href="http://www.brooklyn.cuny.edu/web/instagram.php"> <i class="fab fa-instagram" id="fontAwesome"></i> </a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
 
 	<!-- jQuery, Popper.js, Bootstrap JS -->
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
