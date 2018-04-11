@@ -1,3 +1,17 @@
+h1 {
+	font-family: 'Oswald', sans-serif;
+}
+
+p {
+	font-family: 'Lato', sans-serif;
+}
+
+#aboutBtn {
+	float: right;
+	background-color: #571845;
+	color: white;
+}
+
 #secButton1 {
 	background-color: #571845;
 	color: white;
@@ -25,12 +39,6 @@
 	padding-top: 5vh;
 }
 
-#aboutBtn {
-	float: right;
-	background-color: #571845;
-	color: white;
-}
-
 #secTitle {
 	padding-top: 5vh;
 	text-align: center;
@@ -45,11 +53,6 @@
 
 #checklist {
 	padding-bottom: 5vh;
-}
-
-#outline {
-	background-color: #571845;
-	margin: 5vh;
 }
 
 #checklistColumns {
@@ -83,13 +86,158 @@
 	background-color: #FF5733;
 	color: white;
 	display: block;
-    margin-left: auto;
-    margin-right: auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #schedule {
 	background-color: #FFC300;
 	padding-bottom: 5vh;
+}
+
+#timelineContainer {
+	background-color: #571845;
+	margin-left: 10vh;
+	margin-right: 10vh;
+}
+
+.timeline {
+	list-style: none;
+	padding: 5vh;
+	position: relative;
+}
+
+.timeline:before {
+	top: 0;
+	bottom: 0;
+	position: absolute;
+	content: " ";
+	width: 3px;
+	background-color: white;
+	left: 50%;
+	margin-left: -1.5px;
+}
+
+.timeline > li {
+	margin-bottom: 20px;
+	position: relative;
+}
+
+.timeline > li:before, .timeline > li:after {
+	content: " ";
+	display: table;
+}
+
+.timeline > li:after {
+	clear: both;
+}
+
+.timeline > li:before, .timeline > li:after {
+	content: " ";
+	display: table;
+}
+
+.timeline > li:after {
+	clear: both;
+}
+
+.timeline > li > .timelineContent {
+	width: 26%;
+	float: left;
+	position: relative;
+	left: 20%;
+	font-family: 'Lato', sans-serif;
+	background-color: white;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	border-radius: 10px;
+	padding: 20px;
+	position: relative;
+}
+
+.timeline > li > .timelineContent:before {
+	position: absolute;
+	top: 26px;
+	right: -15px;
+	display: inline-block;
+	border-top: 15px solid transparent;
+	border-left: 15px solid white;
+	border-right: 0 solid white;
+	border-bottom: 15px solid transparent;
+	content: " ";
+}
+
+.timeline > li > .timelineContent:after {
+	position: absolute;
+	top: 27px;
+	right: -14px;
+	display: inline-block;
+	border-top: 14px solid transparent;
+	border-left: 14px solid white;
+	border-right: 0 solid white;
+	border-bottom: 14px solid transparent;
+	content: " ";
+}
+
+.timeline > li > .timelineMarker {
+	color: #fff;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 1.4em;
+	text-align: center;
+	position: absolute;
+	top: 16px;
+	left: 50%;
+	margin-left: -25px;
+	background-color: #FFC300;
+	z-index: 100;
+	border-top-right-radius: 50%;
+	border-top-left-radius: 50%;
+	border-bottom-right-radius: 50%;
+	border-bottom-left-radius: 50%;
+}
+
+.timeline > li.timeline-inverted > .timelineContent {
+		position: relative;
+	left: -20%;
+	float: right;
+}
+
+.timeline > li.timeline-inverted > .timelineContent:before {
+	border-left-width: 0;
+	border-right-width: 15px;
+	left: -15px;
+	right: auto;
+}
+
+.timeline > li.timeline-inverted > .timelineContent:after {
+	border-left-width: 0;
+	border-right-width: 14px;
+	left: -14px;
+	right: auto;
+}
+
+.timelineBody > p, .timelineBody > ul {
+	margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+	.timeline > li > .timelineContent {
+		font-size: x-small;
+		margin-left: -8vh;
+		padding: 10px;
+		width: 46%;
+	}
+
+	.timeline > li.timeline-inverted > .timelineContent {
+		margin-right: -8vh;
+	}
+
+	.timelineTitle {
+		font-size: small;
+	}
 }
 
 .roadmap {
@@ -107,21 +255,10 @@
 	padding: 5vh;
 }
 
-
-h1 {
-	font-family: 'Oswald', sans-serif;
-}
-
-p {
-	font-family: 'Lato', sans-serif;
-}
-
 .page-footer {
 	background-color: #850040;
 	padding: 2vh;
 }
-
-
 
 #socialMedia {
 	padding: 2vh;
