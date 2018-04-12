@@ -55,10 +55,27 @@ p {
 	padding-bottom: 5vh;
 }
 
+#checklist ul {
+	list-style: none;
+}
+
+#checklistTitle {
+	text-align: center;
+	margin: 1vh;
+}
+
 #checklistColumns {
 	border-style: solid;
 	border-color: #571845;
 	margin: 5vh;
+}
+
+#checklistColumns .btn {
+	margin-bottom: 1vh;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align:center;
 }
 
 #checklistColumn1 {
