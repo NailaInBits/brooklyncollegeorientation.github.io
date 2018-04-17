@@ -282,6 +282,60 @@
 				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec nibh vitae erat efficitur faucibus. </p>
 			</div>
 		</div>
+		<div class="row">
+			<ul>
+				<li>
+					<div class="question">
+						<h5>Is attending orientation mandatory?</h5>
+					</div>
+					<div class="answer">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit voluptatum temporibus dicta reprehenderit tempore quisquam consequuntur porro omnis laboriosam praesentium at et sapiente, provident sit! Suscipit recusandae, ab ratione dignissimos.</p>
+					</div>
+				</li>
+				<li>
+					<div class="question">
+						<h5>What happens if I miss my orientation appointment?</h5>
+					</div>
+					<div class="answer">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora totam delectus, eius nostrum aspernatur voluptas enim fugit ipsa magni voluptatem, odio sit accusamus vel id, commodi consequuntur possimus repellat necessitatibus!</p>
+					</div>
+				</li>
+				<li>
+					<div class="question">
+						<h5>Can I still register for classes if I do not attend orientation?</h5>
+					</div>
+					<div class="answer">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora totam delectus, eius nostrum aspernatur voluptas enim fugit ipsa magni voluptatem, odio sit accusamus vel id, commodi consequuntur possimus repellat necessitatibus!</p>
+					</div>
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<div class="question">
+						<h5>What do I need to bring to orientation?</h5>
+					</div>
+					<div class="answer">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit voluptatum temporibus dicta reprehenderit tempore quisquam consequuntur porro omnis laboriosam praesentium at et sapiente, provident sit! Suscipit recusandae, ab ratione dignissimos.</p>
+					</div>
+				</li>
+				<li>
+					<div class="question">
+						<h5>Can my parents attend orientation with me?</h5>
+					</div>
+					<div class="answer">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit voluptatum temporibus dicta reprehenderit tempore quisquam consequuntur porro omnis laboriosam praesentium at et sapiente, provident sit! Suscipit recusandae, ab ratione dignissimos.</p>
+					</div>
+				</li>
+				<li>
+					<div class="question">
+						<h5>What should I do after orientation?</h5>
+					</div>
+					<div class="answer">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit voluptatum temporibus dicta reprehenderit tempore quisquam consequuntur porro omnis laboriosam praesentium at et sapiente, provident sit! Suscipit recusandae, ab ratione dignissimos.</p>
+					</div>
+				</li>
+			</ul>
+		</div>
 	</div>
 
 	<!-- Staff -->
@@ -421,5 +475,14 @@
 	<script type="text/javascript' src='script.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	<script type="text/javascript">
+		var section = $("li");
+		function toggleAccordion() {
+			section.removeClass("active");
+			$(this).addClass("active");
+		}
+		section.on("click", toggleAccordion);
+	</script>
 </body>
 </html>
