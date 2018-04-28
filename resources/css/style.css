@@ -371,9 +371,29 @@ p {
 	background-color: #571845;
 }
 
+#roadmap h1 {
+	color: white;
+}
+
 #roadMapImage {
-	margin: 5vh;
-	margin-left: 0;
+	margin: 10vh;
+	margin-top: 0;
+	margin-bottom: 5vh;
+}
+
+#roadMapButton {
+	margin-top: 15vh;
+}
+
+#roadMapLink {
+	margin-top: 5vh;
+	background-color: #FF5733;
+	color: white;
+}
+
+#roadMapButton button:hover {
+	background-color: yellow;
+	color: black;
 }
 
 #faq {
