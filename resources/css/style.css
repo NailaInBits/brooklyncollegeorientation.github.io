@@ -281,61 +281,13 @@ p {
 	margin-bottom: 0;
 }
 
-@media screen and (max-width: 768px) {
-	.timeline > li > .timelineContent {
-		font-size: x-small;
-		margin-left: -8vh;
-		padding: 10px;
-		width: 46%;
-	}
-
-	.timeline > li.timeline-inverted > .timelineContent {
-		margin-right: -8vh;
-	}
-
-	.timelineTitle {
-		font-size: small;
-	}
-
-	#faq ul {
-		display: flex;
-		min-height: 5vh;
-		max-height: 5vh;
-		margin: 2vh;
-		margin-top: 0vh; 
-		padding: 0;
-		list-style-type: none;
-	}
-
-	#faq li {
-		flex: 1;
-		display: flex;
-		align-items: stretch;
-		background: #FF5733;
-		cursor: pointer;
-		transition: all .5s ease;
-	}
-
-	#faq li:hover {
-		background: #FFC300;
-	}
-
-	#faq li.active {
-		flex: 5;
-		background: white;
-		cursor: default;
-	}
-
-	#faq li.active h5 {
-		color: #850040;
-	}
-
+@media screen and (max-width: 1380px) {
 	#faq li.active .answer {
 		flex: 4;
 		opacity: 1;
-		transform: scaleX(1);
+		transform: scaleX(4);
 		color: black;
-		font-size: xx-small;
+		font-size: 11px;
 	}
 
 	#faq li .question {
@@ -351,11 +303,111 @@ p {
 
 	#faq li .question h5 {
 		font-family: 'Oswald', sans-serif;
-		font-size: small;
+		font-size: 12px;
 		margin: 0;
 	}
 
 	#faq li .answer {
+		flex: 1;
+		display: flex;
+		align-items: center;
+		margin: 0;
+		padding: 0;
+		opacity: 0;
+		transition: all .25s .1s ease-out;
+	}
+}
+
+@media screen and (max-width: 2080px) {
+	#faqSmall {
+		display: none;
+	}
+}
+
+
+@media screen and (max-width: 768px) {
+	#faq {
+		 display: none;
+	}
+
+	#faqSmall {
+		 display: block;
+	}
+
+	.timeline > li > .timelineContent {
+		font-size: x-small;
+		margin-left: -8vh;
+		padding: 10px;
+		width: 46%;
+	}
+
+	.timeline > li.timeline-inverted > .timelineContent {
+		margin-right: -8vh;
+	}
+
+	.timelineTitle {
+		font-size: small;
+	}
+
+	#faqSmall ul {
+		display: flex;
+		min-height: 5vh;
+		max-height: 5vh;
+		margin: 2vh;
+		margin-top: 0vh; 
+		padding: 0;
+		list-style-type: none;
+	}
+
+	#faqSmall li {
+		flex: 1;
+		display: flex;
+		align-items: stretch;
+		background: #FF5733;
+		cursor: pointer;
+		transition: all .5s ease;
+	}
+
+	#faqSmall li:hover {
+		background: #FFC300;
+	}
+
+	#faqSmall li.active {
+		flex: 5;
+		background: white;
+		cursor: default;
+	}
+
+	#faqSmall li.active h5 {
+		color: #850040;
+	}
+
+	#faqSmall li.active .answerSmall {
+		flex: 4;
+		opacity: 1;
+		transform: scaleX(1);
+		color: black;
+		font-size: 8px;
+	}
+
+	#faqSmall li .questionSmall {
+		flex: 1;
+		display: flex;
+		align-items: center;
+		width: 50%;
+		margin: 0;
+		padding: 1vh;
+		text-align: left;
+		color: black;
+	}
+
+	#faqSmall li .questionSmall h5 {
+		font-family: 'Oswald', sans-serif;
+		font-size: 8px;
+		margin: 0;
+	}
+
+	#faqSmall li .answerSmall {
 		flex: 1;
 		display: flex;
 		align-items: center;
@@ -375,6 +427,10 @@ p {
 	color: white;
 }
 
+#roadmap p {
+	color: white;
+}
+
 #roadMapImage {
 	margin: 10vh;
 	margin-top: 0;
@@ -382,7 +438,7 @@ p {
 }
 
 #roadMapButton {
-	margin-top: 15vh;
+	margin: 5vh;
 }
 
 #roadMapLink {
@@ -394,10 +450,6 @@ p {
 #roadMapButton button:hover {
 	background-color: yellow;
 	color: black;
-}
-
-#faq {
-	
 }
 
 #staffCards {
@@ -516,6 +568,76 @@ figure.staffCard figcaption h5 {
 	margin: 0;
 }
 #faq li .answer {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	opacity: 0;
+	transition: all .25s .1s ease-out;
+}
+
+
+/**/
+
+#faqSmall ul {
+	display: flex;
+	min-height: 20vh;
+	max-height: 20vh;
+	margin: 7vh;
+	margin-top: 0vh; 
+	padding: 0;
+	overflow: hidden;
+	list-style-type: none;
+}
+
+#faqSmall li {
+	flex: 1;
+	display: flex;
+	align-items: stretch;
+	padding: 20px;
+	background: #FF5733;
+	cursor: pointer;
+	transition: all .5s ease;
+}
+
+#faqSmall li:hover {
+	background: #FFC300;
+}
+
+#faqSmall li.active {
+	flex: 5;
+	background: white;
+	cursor: default;
+}
+
+#faqSmall li.active h5 {
+	color: #850040;
+}
+
+#faqSmall li.active .answerSmall {
+	flex: 4;
+	opacity: 1;
+	transform: scaleX(1);
+	color: black;
+}
+
+#faqSmall li .questionSmall {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	margin: 0;
+	padding: 1vh;
+	text-align: left;
+	color: black;
+}
+
+#faqSmall li .questionSmall h5 {
+	font-family: 'Oswald', sans-serif;
+	margin: 0;
+}
+#faqSmall li .answerSmall {
 	flex: 1;
 	display: flex;
 	align-items: center;
