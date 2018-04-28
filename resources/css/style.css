@@ -6,6 +6,17 @@ p {
 	font-family: 'Lato', sans-serif;
 }
 
+.navbar-title {
+	font-family: 'Oswald', sans-serif;
+	font-size: xx-large;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: 1vh;
+	text-align: center;
+	color: black;
+}
+
 #aboutBtn {
 	float: right;
 	background-color: #571845;
@@ -337,12 +348,18 @@ p {
 	}
 }
 
-.roadmap {
-	height: 100vh;
+#roadmap {
+	color: white;
+	background-color: #571845;
+}
+
+#roadMapImage {
+	margin: 5vh;
+	margin-left: 0;
 }
 
 #faq {
-	background-color: #571845;
+	
 }
 
 #staffCards {
